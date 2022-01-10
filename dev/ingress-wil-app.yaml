@@ -9,9 +9,9 @@ spec:
   - http:
       paths:
       - pathType: Prefix
-        path: /app
+        path: /
         backend:
           service:
             name: wil-app-service
             port:
-              number: 81
+              number: 8888
