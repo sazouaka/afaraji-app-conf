@@ -3,7 +3,8 @@ kind: Ingress
 metadata:
   name: wil-app-ingress
   annotations:
-    kubernetes.io/ingress.class: "traefik"
+    ingress.kubernetes.io/ssl-redirect: "false"
+    traefik.ingress.kubernetes.io/rewrite-target: /
 spec:
   rules:
   - http:
