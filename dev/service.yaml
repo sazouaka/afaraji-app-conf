@@ -3,6 +3,7 @@ kind: Service
 metadata:
   name: wil-app-service
 spec:
+  type: LoadBalancer
   selector:
     app: wil-app
   ports:
